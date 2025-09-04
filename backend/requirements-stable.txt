@@ -1,0 +1,42 @@
+# Requirements yang stabil untuk Python 3.13
+# Core Framework - versi yang lebih lama tapi stabil
+fastapi==0.103.2
+uvicorn[standard]==0.23.2
+pydantic==2.3.0
+pydantic-settings==2.0.3
+
+# Database - SQLite untuk kompatibilitas
+sqlalchemy==2.0.20
+alembic==1.12.1
+
+# Background Tasks
+celery==5.3.1
+flower==2.0.1
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+
+# HTTP Client
+httpx==0.24.1
+aiofiles==23.1.0
+
+# WebSocket
+websockets==11.0.3
+
+# Utilities
+python-dotenv==1.0.0
+loguru==0.7.0
+rich==13.4.2
+
+# Development
+pytest==7.4.0
+pytest-asyncio==0.21.1
+black==23.7.0
+isort==5.12.0
+flake8==6.0.0
+
+# AI Integration
+groq==0.4.1
+openai==1.3.0

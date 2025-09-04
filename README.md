@@ -11,11 +11,12 @@ Web UI untuk monitoring dan menjalankan tools pentest dengan sistem rekomendasi 
 - **SQLMap**: SQL injection testing
 - **Gobuster**: Directory enumeration
 
-### 🤖 Intelligent Recommendations
-- Analisis hasil scan otomatis
-- Saran langkah selanjutnya berdasarkan temuan
-- Prioritas vulnerability
-- Mitigation strategies
+### 🤖 AI-Powered Intelligence
+- **Groq AI Integration**: Analisis mendalam dengan Llama3-8B model
+- **Intelligent Recommendations**: Saran berbasis AI dengan prioritas akurat
+- **Risk Assessment**: Scoring risiko otomatis dengan confidence level
+- **Vulnerability Analysis**: Deteksi pattern dan threat intelligence
+- **Smart Reporting**: AI-generated reports dengan insights mendalam
 
 ### 📊 Real-time Monitoring
 - Live output dari tools
@@ -68,6 +69,7 @@ Web UI untuk monitoring dan menjalankan tools pentest dengan sistem rekomendasi 
 - **Redis**: Caching dan message queue
 - **Celery**: Background task processing
 - **Pydantic**: Data validation
+- **Groq AI**: Advanced AI analysis dengan Llama3-8B
 
 ### Frontend
 - **React**: UI framework
@@ -166,6 +168,13 @@ docker run -d --name postgres -e POSTGRES_DB=pentest_lab -e POSTGRES_USER=pentes
 - View scan recommendations
 - Track remediation progress
 
+### 5. AI Analysis
+- AI-powered vulnerability assessment
+- Intelligent risk scoring
+- Smart recommendations
+- Advanced threat analysis
+- AI-generated reports
+
 ## 🔧 Konfigurasi
 
 ### Environment Variables
@@ -185,6 +194,13 @@ REDIS_URL=redis://localhost:6379/0
 # VM Settings
 KALI_VM_IP=192.168.56.10
 METASPLOITABLE_VM_IP=192.168.56.20
+VM_NETWORK=192.168.56.0/24
+
+# AI Configuration
+GROQ_API_KEY=your-groq-api-key-here
+GROQ_MODEL=llama3-8b-8192
+AI_ENABLED=true
+AI_ANALYSIS_DEPTH=detailed
 ```
 
 ### Tool Configuration

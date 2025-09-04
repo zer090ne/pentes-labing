@@ -1,14 +1,14 @@
+# Requirements khusus untuk Python 3.13
 # Core Framework
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
 pydantic==2.4.2
 pydantic-settings==2.0.3
 
-# Database - Alternative approach for Linux
+# Database - SQLite untuk Python 3.13
 sqlalchemy==2.0.23
 alembic==1.13.1
-# Use asyncpg for better Linux compatibility
-asyncpg==0.28.0
+# Skip asyncpg untuk Python 3.13, gunakan SQLite
 redis==5.0.1
 
 # Background Tasks

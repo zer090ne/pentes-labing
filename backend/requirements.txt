@@ -4,11 +4,11 @@ uvicorn[standard]==0.24.0
 pydantic==2.5.0
 pydantic-settings==2.1.0
 
-# Database
+# Database - Alternative approach for Linux
 sqlalchemy==2.0.23
 alembic==1.13.1
-psycopg2-binary==2.9.9; sys_platform != "linux"
-psycopg2==2.9.9; sys_platform == "linux"
+# Use asyncpg for better Linux compatibility
+asyncpg==0.29.0
 redis==5.0.1
 
 # Background Tasks

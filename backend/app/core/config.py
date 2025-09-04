@@ -21,7 +21,7 @@ class Settings(BaseSettings):
     ALGORITHM: str = "HS256"
     
     # Database
-    DATABASE_URL: str = "postgresql://pentest:password@localhost:5432/pentest_lab"
+    DATABASE_URL: str = "postgresql+asyncpg://pentest:password@localhost:5432/pentest_lab"
     REDIS_URL: str = "redis://localhost:6379/0"
     
     # CORS
